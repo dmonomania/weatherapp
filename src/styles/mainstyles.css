@@ -26,10 +26,17 @@
   padding: 0.5em 0.5em;
 }
 
-.form input {
+.test-input {
   margin: auto;
+  height: 30px;
   width: 90%;
 }
+.submit {
+  width: 90%;
+  height: 35px;
+  margin-top: 10px !important;
+}
+
 #weather-container {
   margin: auto;
   max-width: 400px;
