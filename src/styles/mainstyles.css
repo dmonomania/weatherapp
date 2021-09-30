@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Urbanist:wght@100;300;400;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+
+.split > * + * {
+  margin-left: 0.5em;
+}
+
+.container {
+  margin: auto;
+  max-width: 400px;
+  padding: 0.5em 0.5em;
+}
+
+.form input {
+  margin: auto;
+  width: 90%;
+}
+#weather-container {
+  margin: auto;
+  max-width: 400px;
+  padding: 0.5em 0.5em;
+}
+
+#weather-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#weather-text p {
+  line-height: 1em;
+  font-size: 3em;
+  font-family: 'Ephesis', sans-serif;
+}
+
+#weather-city {
+  line-height: 1em;
+  font-size: 6em;
+}
+#weather-country {
+  max-width: 350px;
+  font-weight: 100;
+  line-height: 0.8em;
+  font-size: 3em;
+  align-self: flex-end;
+}
+
+#weather-numbers-container {
+  align-items: center;
+}
+#weather-temp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#weather-temp p {
+  align-self: center;
+  font-size: 10em;
+  position: relative;
+}
+#weather-temp p::after {
+  content: '\00b0';
+  position: absolute;
+  font-size: 0.5em;
+  right: -5%;
+}
+#weather-temp sup {
+  top: 10%;
+  right: 1%;
+  position: absolute;
+  font-size: 0.16em;
+}
+
+#weather-temp {
+  align-self: flex-start;
+}
+
+#weather-extras {
+  line-height: 1.5em;
+  padding-left: 5px;
+  font-size: 1.45em;
+  border-left: 5px solid purple;
+}
