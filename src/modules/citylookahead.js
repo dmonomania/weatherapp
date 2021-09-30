@@ -4,11 +4,11 @@ const dataList = document.getElementById('datalist');
 export let cities;
 export let countries;
 
-fetch('./dist/cities.json')
+fetch('./cities.json')
   .then((response) => response.json())
   .then((data) => (cities = data));
 
-fetch('./dist/countries.json')
+fetch('./countries.json')
   .then((response) => response.json())
   .then((data) => (countries = data));
 
